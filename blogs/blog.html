@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <title>Quiz Hero | blog</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+       
+    
+     
+    
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                fontFamily: {
+                  common: ["Rubik", "sans-serif"],
+                },
+              },
+            },
+          };
+        </script>
+      </head>
+<body class="bg-white font-common">
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+          <div class="text-zinc-800 font-bold uppercase">
+            <h1 class="text-lg">Quiz <span class="text-green-700">Block</span></h1>
+            <p class="text-[10px] font-normal capitalize -mt-1">
+              Get ready to Quiz and be amazed!
+            </p>
+          </div>
+          <a href="/index.html"
+            class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+          >
+           Exam
+          </a>
+        </nav>
+      </header>
+      <main>
+        <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto space-y-5 py-10">
+            <article class="space-y-3 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-600">Q1:</span> What is the purpose of the 'let' keyword in JavaScript?</h2>
+                <p class="text-justify"><span class="text-green-500">Answer:</span> The 'let' keyword is used to declare variables that are limited to the scope of a block statement, such as inside a loop or an if statement. It is preferred over 'var' due to its block-scope functionality and prevention of variable hoisting.</p>
+            </article>
+        
+            <article class="space-y-3 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-600">Q2:</span> What is a closure in JavaScript?</h2>
+                <p class="text-justify"><span class="text-green-500">Answer:</span> A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function's variables. It allows for the creation of private variables and functions, providing a way to encapsulate state and behavior.</p>
+            </article>
+        
+            <article class="space-y-3 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-600">Q3:</span> How does the 'this' keyword work in JavaScript?</h2>
+                <p class="text-justify"><span class="text-green-500">Answer:</span> The 'this' keyword in JavaScript refers to the object from which a function is called. Its value is determined by how a function is called (runtime binding). It can refer to different objects depending on the context, such as the global object, a specific instance, or a newly created object in a constructor function.</p>
+            </article>
+        
+            <article class="space-y-3 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-600">Q4:</span> What is the difference between '==' and '===' in JavaScript?</h2>
+                <p class="text-justify"><span class="text-green-500">Answer:</span> The '==' operator checks for equality with type conversion, meaning it converts the operands to the same type before making the comparison. The '===' operator checks for strict equality, meaning it considers both the value and the type without performing type conversion. '===' is generally preferred to avoid unexpected type coercion.</p>
+            </article>
+        
+            <article class="space-y-3 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-600">Q5:</span> What is an IIFE in JavaScript and why is it used?</h2>
+                <p class="text-justify"><span class="text-green-500">Answer:</span> An IIFE (Immediately Invoked Function Expression) is a function that is executed immediately after it is defined. It is used to create a private scope, avoiding variable collisions and keeping the global scope clean. It can also be useful for encapsulating logic.</p>
+            </article>
+        
+            <article class="space-y-3 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-600">Q6:</span> What is event delegation in JavaScript?</h2>
+                <p class="text-justify"><span class="text-green-500">Answer:</span> Event delegation is a technique in JavaScript where a single event listener is added to a parent element to manage events for its child elements. It takes advantage of event bubbling, making it efficient by reducing the number of event listeners needed and dynamically handling events for future child elements.</p>
+            </article>
+        
+            <article class="space-y-3 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-600">Q7:</span> How do you create a promise in JavaScript?</h2>
+                <p class="text-justify"><span class="text-green-500">Answer:</span> A promise in JavaScript can be created using the Promise constructor, which takes a function with two parameters: resolve and reject. These parameters are used to handle the successful or unsuccessful completion of an asynchronous operation. Example: <code>new Promise((resolve, reject) => { /* async code */ });</code>.</p>
+            </article>
+        
+            <article class="space-y-3 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-600">Q8:</span> What is the purpose of async/await in JavaScript?</h2>
+                <p class="text-justify"><span class="text-green-500">Answer:</span> The async/await syntax in JavaScript is used to work with promises more comfortably. An async function returns a promise, and the await keyword is used to pause the execution of the function until the promise is resolved, making asynchronous code look and behave more like synchronous code, improving readability and maintainability.</p>
+            </article>
+        
+          
+        </section>
+      </main>
+</body>
+</html>
